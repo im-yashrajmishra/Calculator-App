@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="util.css">
+</head>
+<body>
+    <main class="">
+        <section class="mContainer" id="mContainer1">
+            <img src="images/favicon.png" alt="logo" id="logo" class="hImage">
+            <p class="mtext1" id="mtext11"><label for="mtext11">Calculator </label><label for="mtext11" class="grey">App</label></p>
+        </section>
+        <section class="mContainer" id="mContainer2">
+            <p class="mtext2" id="mtext21"></p>
+            <p class="mtext3" id="mtext31"></p>
+        </section><br>
+        <section class="mContainer" id="mContainer3">
+            <div id="mBox1" class="mBox">
+                <div class="operators" onclick="modifyString('+')">
+                    <p class="mtext4" id="mtext41"><label for="mtext41">+</label></p>
+                </div>
+                <div class="operators" onclick="modifyString('-')">
+                    <p class="mtext4" id="mtext42"><label for="mtext42">-</label></p>
+                </div>
+                <div class="operators" onclick="modifyString('*')">
+                    <p class="mtext4" id="mtext43"><label for="mtext43">*</label></p>
+                </div>
+                <div class="operators" onclick="modifyString('/')">
+                    <p class="mtext4" id="mtext44"><label for="mtext44">/</label></p>
+                </div>
+            </div>
+            <div id="mBox2" class="mBox">
+                <div class="numbers" onclick="modifyString('9')">
+                    <p class="mtext4" id="mtext45"><label for="mtext45">9</label></p>
+                </div>
+                <div class="numbers" onclick="modifyString('8')">
+                    <p class="mtext4" id="mtext46"><label for="mtext46">8</label></p>
+                </div>
+                <div class="numbers" onclick="modifyString('7')">
+                    <p class="mtext4" id="mtext47"><label for="mtext47">7</label></p>
+                </div>
+                <div class="operators" onclick="modifyString('.')">
+                    <p class="mtext4" id="mtext48"><label for="mtext48">.</label></p>
+                </div>
+            </div>
+            <div id="mBox3" class="mBox">
+                <div class="numbers" onclick="modifyString('6')">
+                    <p class="mtext4" id="mtext49"><label for="mtext49">6</label></p>
+                </div>
+                <div class="numbers" onclick="modifyString('5')">
+                    <p class="mtext4" id="mtext410"><label for="mtext410">5</label></p>
+                </div>
+                <div class="numbers" onclick="modifyString('4')">
+                    <p class="mtext4" id="mtext411"><label for="mtext411">4</label></p>
+                </div>
+                <div class="clear" onclick="modifyString('A')">
+                    <p class="mtext4" id="mtext412"><label for="mtext412">AC</label></p>
+                </div>
+            </div>
+            <div id="mBox4" class="mBox">
+                <div class="numbers" onclick="modifyString('3')">
+                    <p class="mtext4" id="mtext413"><label for="mtext413">3</label></p>
+                </div>
+                <div class="numbers" onclick="modifyString('2')">
+                    <p class="mtext4" id="mtext414"><label for="mtext414">2</label></p>
+                </div>
+                <div class="numbers" onclick="modifyString('1')">
+                    <p class="mtext4" id="mtext415"><label for="mtext415">1</label></p>
+                </div>
+                <div class="delete" onclick="modifyString('D')">
+                    <p class="mtext4" id="mtext416"><label for="mtext416">DEL</label></p>
+                </div>
+            </div>
+            <div id="mBox5" class="mBox">
+                <div class="numbers" onclick="modifyString('0')">
+                    <p class="mtext4" id="mtext417"><label for="mtext417">0</label></p>
+                </div>
+                <div class="brackets">
+                    <p class="mtext4" id="mtext418"><label for="mtext418">(</label></p>
+                </div>
+                <div class="brackets">
+                    <p class="mtext4" id="mtext419"><label for="mtext419">)</label></p>
+                </div>
+                <div class="operators" onclick="modifyString('=')">
+                    <p class="mtext4" id="mtext420"><label for="mtext420">=</label></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
